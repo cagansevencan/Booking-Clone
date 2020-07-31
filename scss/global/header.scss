@@ -1,11 +1,12 @@
 .Header {
   border-bottom: 1px solid #ddd;
+  height: 68px;
 
   .container {
     position: relative;
     display: flex; //All the items will be next to each other
     align-items: center;
-    height: 64px;
+    height: 100%;
   }
 
   &-switch {

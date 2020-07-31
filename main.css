@@ -350,7 +350,7 @@ body {
   font-family: "Open Sans", "Roboto", Arial, sans-serif; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -388,12 +388,13 @@ a {
     background-color: #01ACEE; }
 
 .Header {
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  height: 68px; }
   .Header .container {
     position: relative;
     display: flex;
     align-items: center;
-    height: 64px; }
+    height: 100%; }
   .Header-switch {
     margin-left: auto;
     position: relative;
@@ -486,6 +487,18 @@ a {
           border-top-right-radius: 3px; }
   .Header-logo img {
     width: 144px; }
+
+.Navigation {
+  background-color: #F1F6FF;
+  height: 50px; }
+  .Navigation .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll; }
+  .Navigation-item {
+    margin-right: 20px;
+    font-size: 0.9em; }
 
 body {
   height: 4000px; }
