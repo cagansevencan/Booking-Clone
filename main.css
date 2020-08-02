@@ -380,17 +380,21 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   height: 40px;
-  background-color: transparent;
-  color: white; }
+  background-color: #01ACEE;
+  color: white;
+  text-align: center;
+  justify-content: center; }
   .button-icon {
     color: black;
     padding-left: 0;
     padding-right: 0;
     width: 40px;
-    justify-content: center; }
-  .button-blue {
-    color: white;
-    background-color: #01ACEE; }
+    justify-content: center;
+    background-color: transparent; }
+  .button-full {
+    width: 100%; }
+  .button-navy {
+    background-color: #083B87; }
 
 .text {
   min-height: 40px;
@@ -398,6 +402,14 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   width: 100%; }
+  .text::-moz-placeholder {
+    color: #083B87; }
+  .text:-ms-input-placeholder {
+    color: #083B87; }
+  .text::-ms-input-placeholder {
+    color: #083B87; }
+  .text::placeholder {
+    color: #083B87; }
 
 .select {
   display: inline-block;
@@ -417,6 +429,39 @@ a {
     padding-left: 40px; }
   .form-item .select {
     padding-left: 40px; }
+
+.form-description {
+  margin-top: 5px; }
+
+.form-checkbox {
+  display: flex;
+  align-items: center; }
+
+.checkbox {
+  position: relative; }
+  .checkbox input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none; }
+  .checkbox:before {
+    content: "";
+    display: inline-block;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    border: 2px solid white; }
+  .checkbox .icon {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 2px;
+    margin-top: -4px;
+    width: 20px;
+    height: 20px; }
+  .checkbox input:checked + .icon {
+    display: inline-block; }
 
 .Header {
   height: 68px; }
@@ -439,10 +484,10 @@ a {
     transition: 0.2s;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
-    top: 100%;
+    top: 68px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -532,22 +577,29 @@ a {
     font-size: 0.9em; }
 
 .Showcase {
-  padding-top: 100px;
+  padding-top: 30px;
   padding-bottom: 100px;
   background: url(img/showcase_back.jpg) no-repeat center center/cover;
-  text-align: center;
   color: white; }
 
 .Search {
+  margin-top: 30px;
   background-color: #FBBE00;
-  padding: 40px;
+  padding: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); }
   .Search-form {
     display: flex;
     position: relative;
     flex-direction: column; }
-  .Search .asd {
-    right: 0; }
+    .Search-form-item + .Search-form-item {
+      margin-top: 20px; }
+  .Search .for-work {
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; }
+    .Search .for-work .checkbox {
+      margin-left: 10px; }
 
 body {
   height: 4000px; }

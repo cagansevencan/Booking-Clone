@@ -1,6 +1,6 @@
+$Header-height: 68px;
 .Header {
-
-  height: 68px;
+height: $Header-height;
 
   .container {
     position: relative;
@@ -27,10 +27,10 @@
     transition: 0.2s;
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
-    top: 100%;
+    top: $Header-height;
     padding-left: $gutter;
     padding-right: $gutter;
     padding-bottom: 20px;
