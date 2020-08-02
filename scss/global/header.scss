@@ -1,5 +1,5 @@
 .Header {
-  border-bottom: 1px solid #ddd;
+
   height: 68px;
 
   .container {
@@ -27,7 +27,7 @@
     transition: 0.2s;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 100%;
@@ -46,6 +46,7 @@
     }
 
      @include media-query("tablet") {
+       pointer-events: auto;
        opacity: 1;
        transform: translateY(0);
        margin-left: auto;

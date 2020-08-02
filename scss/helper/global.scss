@@ -22,6 +22,13 @@ a {
   fill: currentColor;
 }
 
+.select, .button, .text {
+  font-family: inherit;
+  border-radius: $border-radius;
+  border: 0;
+  font-weight: bold;
+  background-color: #fff;
+}
 
 .button {
   display: inline-flex;
@@ -31,8 +38,6 @@ a {
   height: $finger-size;
   background-color: transparent;
   color: white;
-  border-radius: $border-radius;
-  font-weight: bold;
 
   &-icon{
     color: black;
@@ -45,5 +50,39 @@ a {
     color: white;
     background-color: $color-blue;
   }
+}
 
+
+//For all the textboxes
+.text {
+  min-height: $finger-size;
+  color: $color-navy;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.select {
+  display: inline-block;
+  width: 100%;
+  height: $finger-size;
+  color: $color-navy;
+}
+
+.form-item {
+  position: relative;
+  .icon {
+  position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-navy;
+  }
+  .text {
+  padding-left: 40px;
+  }
+
+  .select {
+    padding-left: 40px;
+  }
 }
