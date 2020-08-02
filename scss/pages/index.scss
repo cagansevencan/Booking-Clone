@@ -1,17 +1,32 @@
 .Showcase {
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   background: url(img/showcase_back.jpg) no-repeat center center / cover;
   color: white;
+  text-align: center;
+
+  .container {
+
+  }
+
+  &-title {
+
+  }
+
+  &-subtitle {
+    margin-top: 10px;
+  }
+
 }
 
 .Search {
+  text-align: left;
   margin-top: 30px;
   background-color: $color-yellow;
   padding: $gutter;
   box-shadow: 0 20px 40px rgba(black, .3);
 
-  &-form{
+  &-form {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -20,12 +35,17 @@
       & + & {
         margin-top: 20px;
       }
+      &-submit {
+        display: flex;
+        flex-direction: column-reverse;
+      }
     }
+
   }
 
-  .for-work{
-    font-size: $font-size-small;
-    margin-top: 10px;
+  .for-work {
+    font-size: $font-size-sma ll;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
 

@@ -347,7 +347,11 @@ td {
   padding: 0; }
 
 body {
-  font-family: "Open Sans", "Roboto", Arial, sans-serif; }
+  font-family: "Open Sans", "Roboto", Arial, sans-serif;
+  line-height: 1.4; }
+
+h1, h2, h3 {
+  line-height: 1.2; }
 
 .container {
   max-width: 1140px;
@@ -577,11 +581,15 @@ a {
 
 .Showcase {
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   background: url(img/showcase_back.jpg) no-repeat center center/cover;
-  color: white; }
+  color: white;
+  text-align: center; }
+  .Showcase-subtitle {
+    margin-top: 10px; }
 
 .Search {
+  text-align: left;
   margin-top: 30px;
   background-color: #FBBE00;
   padding: 20px;
@@ -592,13 +600,13 @@ a {
     flex-direction: column; }
     .Search-form-item + .Search-form-item {
       margin-top: 20px; }
+    .Search-form-item-submit {
+      display: flex;
+      flex-direction: column-reverse; }
   .Search .for-work {
     font-size: 0.9em;
-    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center; }
     .Search .for-work .checkbox {
       margin-left: 10px; }
-
-body {
-  height: 4000px; }
