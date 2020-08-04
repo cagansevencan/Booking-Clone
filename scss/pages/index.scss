@@ -5,18 +5,28 @@
   color: white;
   text-align: center;
 
+
+   @include media-query {
+     padding-top: 80px;
+     padding-bottom: 50px;
+   }
+
   .container {
 
   }
 
   &-title {
-
+   @include media-query {
+     font-size: 3em;
+   }
   }
 
   &-subtitle {
-    margin-top: 10px;
+    margin-top: 20px;
+     @include media-query {
+       font-size: 1.2em;
+     }
   }
-
 }
 
 .Search {
@@ -26,14 +36,32 @@
   padding: $gutter;
   box-shadow: 0 20px 40px rgba(black, .3);
 
+   @include media-query {
+     padding: 50px 30px;
+     margin-top: 50px;
+   }
+
+
   &-form {
     display: flex;
     position: relative;
     flex-direction: column;
 
+
+     @include media-query {
+       align-items: flex-start;
+       flex-direction: row;
+     }
+
+
     &-item {
       & + & {
         margin-top: 20px;
+         @include media-query {
+           margin-top: 0;
+           flex-grow: 1;
+           margin-left: 10px;
+         }
       }
       &-submit {
         display: flex;
@@ -44,10 +72,15 @@
   }
 
   .for-work {
-    font-size: $font-size-sma ll;
+    font-size: $font-size-small;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
+
+     @include media-query {
+       position: absolute;
+       top: 100%;
+     }
 
     .checkbox {
       margin-left: 10px;

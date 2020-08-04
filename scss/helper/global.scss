@@ -79,13 +79,14 @@ a {
     color: rgba($color-navy, .7);
   }
   &::-webkit-calendar-picker-indicator {
-    //visibility: hidden;
-    width: 2.0em;
+    visibility: hidden;
+
   }
 
 }
 
 .select {
+  appearance: none;
   display: inline-block;
   width: 100%;
   height: $finger-size;
@@ -111,7 +112,12 @@ a {
 }
 
 .form-description {
-  margin-top: 5px;
+  margin-top: 4px;
+  font-size: $font-size-small;
+   @include media-query {
+     font-size: $font-size;
+     margin-top: 20px;
+   }
 }
 
 .form-checkbox {
