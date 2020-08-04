@@ -616,6 +616,17 @@ a {
     @media (min-width: 768px) {
       .Showcase-subtitle {
         font-size: 1.2em; } }
+  .Showcase-shortlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; }
+    .Showcase-shortlink a {
+      color: inherit;
+      margin-left: 10px;
+      margin-right: 10px; }
+      .Showcase-shortlink a:hover {
+        text-decoration: underline; }
 
 .Search {
   text-align: left;

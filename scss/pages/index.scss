@@ -27,6 +27,24 @@
        font-size: 1.2em;
      }
   }
+
+  &-shortlink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    a {
+      color: inherit;
+        margin-left: 10px;
+      margin-right: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
 }
 
 .Search {
