@@ -8,7 +8,7 @@
 
    @include media-query {
      padding-top: 80px;
-     padding-bottom: 50px;
+     padding-bottom: 100px;
    }
 
   .container {
@@ -55,6 +55,11 @@
 
 
     &-item {
+       @include media-query {
+         width: auto;
+
+       }
+
       & + & {
         margin-top: 20px;
          @include media-query {
@@ -79,7 +84,8 @@
 
      @include media-query {
        position: absolute;
-       top: 100%;
+       top: calc(#{$finger-size} + 20px);
+       right: 0;
      }
 
     .checkbox {

@@ -27,7 +27,7 @@ a {
   fill: currentColor;
 }
 
-.select, .button, .text {
+.select select, .button, .text {
   font-family: inherit;
   border-radius: $border-radius;
   border: 0;
@@ -86,16 +86,34 @@ a {
 }
 
 .select {
-  appearance: none;
-  display: inline-block;
-  width: 100%;
-  height: $finger-size;
+  position: relative;
   color: $color-navy;
-}
+
+  select{
+    appearance: none;
+    display: inline-block;
+    width: 100%;
+    padding-right: 30px;
+    height: $finger-size;
+    color: $color-navy;
+  }
+
+  &-icon {
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+
+  }
+
 
 .form-item {
   position: relative;
-  .icon {
+  .form-item-icon {
+    z-index: 1;
   position: absolute;
     left: 10px;
     top: 50%;
@@ -106,7 +124,7 @@ a {
   padding-left: 40px;
   }
 
-  .select {
+  .select select {
     padding-left: 40px;
   }
 }
