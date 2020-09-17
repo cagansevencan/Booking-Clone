@@ -383,7 +383,7 @@ a {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  height: 40px;
+  height: 44px;
   background-color: #01ACEE;
   color: white;
   text-align: center;
@@ -392,7 +392,7 @@ a {
     color: black;
     padding-left: 0;
     padding-right: 0;
-    width: 40px;
+    width: 44px;
     justify-content: center;
     background-color: transparent; }
   .button-full {
@@ -401,12 +401,18 @@ a {
     background-color: #083B87; }
 
 .text {
-  min-height: 40px;
+  min-height: 44px;
   color: #083B87;
   padding-left: 10px;
   padding-right: 10px;
   width: 100%; }
-  .text::placeholder, .text::-webkit-datetime-edit {
+  .text::-moz-placeholder {
+    color: rgba(8, 59, 135, 0.7); }
+  .text:-ms-input-placeholder {
+    color: rgba(8, 59, 135, 0.7); }
+  .text::-ms-input-placeholder {
+    color: rgba(8, 59, 135, 0.7); }
+  .text::placeholder {
     color: rgba(8, 59, 135, 0.7); }
   .text::-webkit-calendar-picker-indicator {
     visibility: hidden; }
@@ -421,9 +427,10 @@ a {
     display: inline-block;
     width: 100%;
     padding-right: 30px;
-    height: 40px;
+    height: 44px;
     color: #083B87; }
   .select-icon {
+    pointer-events: none;
     z-index: 1;
     position: absolute;
     right: 10px;
@@ -433,6 +440,7 @@ a {
 .form-item {
   position: relative; }
   .form-item .form-item-icon {
+    pointer-events: none;
     z-index: 1;
     position: absolute;
     left: 10px;
@@ -548,7 +556,7 @@ a {
         justify-content: center;
         padding-left: 20px;
         padding-right: 20px;
-        height: 40px; }
+        height: 44px; }
         .Header-menu-user a:hover {
           background-color: red; }
     .Header-menu-property {
@@ -574,7 +582,7 @@ a {
         border: 1px solid #E0E6F1;
         padding-left: 10px;
         padding-right: 10px;
-        height: 40px;
+        height: 44px;
         border-radius: 0px; }
         .Header-menu-helper select:nth-child(1) {
           border-bottom-left-radius: 3px;
@@ -637,7 +645,9 @@ a {
   @media (min-width: 768px) {
     .Search {
       padding: 50px 30px;
-      margin-top: 50px; } }
+      margin-top: 50px;
+      margin-left: 50px;
+      margin-right: 50px; } }
   .Search-form {
     display: flex;
     position: relative;
@@ -667,7 +677,7 @@ a {
     @media (min-width: 768px) {
       .Search .for-work {
         position: absolute;
-        top: calc(40px + 20px);
+        top: calc(44px + 20px);
         right: 0; } }
     .Search .for-work .checkbox {
       margin-left: 10px; }

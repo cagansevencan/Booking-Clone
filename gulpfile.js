@@ -39,9 +39,11 @@ gulp.task('css', () => {
 
 
 
-gulp.task('html', (done) => {
-   browserSync.reload()
-    done()
+gulp.task('html', () => {
+    return gulp.src('views/*.pug')
+        .pipe(pug())
+        .pipe(gulp.dest('./'))
+        .on('end', browserSync.reload)
 })
 
 gulp.task('default',

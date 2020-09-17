@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33da7db5-2e56-4ca8-baab-e029d9c8b3c6" name="Default Changelist" comment="" />
+    <list default="true" id="33da7db5-2e56-4ca8-baab-e029d9c8b3c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/global/header.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/global/icons.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/global/master.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/config/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/config/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/helper/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/helper/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/index.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,17 +24,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1heOlrJBhRbeBTv5xIIp1DHdeVU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -32,11 +51,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600368244993</updated>
-      <workItem from="1600368246483" duration="499000" />
+      <workItem from="1600368246483" duration="5141000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1710" y="264" width="584" height="522" key="find.popup" timestamp="1600370896473">
+      <screen x="-1920" y="23" width="1920" height="1007" />
+    </state>
+    <state x="-1710" y="264" width="584" height="522" key="find.popup/0.23.1680.1027/-1920.23.1920.1007@-1920.23.1920.1007" timestamp="1600370896473" />
   </component>
 </project>
