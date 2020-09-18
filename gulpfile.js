@@ -17,7 +17,7 @@ gulp.task('browser-sync', function () {
     gulp.watch('./*.html').on('change', reload)
     gulp.watch('./*.css').on('change', reload)
     gulp.watch('./scss/**/*.scss', gulp.series('css'))
-
+    gulp.watch('./**/*.pug').on('change', reload)
 })
 
 
@@ -40,10 +40,7 @@ gulp.task('css', () => {
 
 
 gulp.task('html', () => {
-    return gulp.src('views/*.pug')
-        .pipe(pug())
-        .pipe(gulp.dest('./'))
-        .on('end', browserSync.reload)
+    browserSync.reload()
 })
 
 gulp.task('default',

@@ -415,7 +415,7 @@ a {
   .text::placeholder {
     color: rgba(8, 59, 135, 0.7); }
   .text::-webkit-calendar-picker-indicator {
-    visibility: hidden; }
+    visibility: inherit; }
 
 .select {
   position: relative;
@@ -557,8 +557,6 @@ a {
         padding-left: 20px;
         padding-right: 20px;
         height: 44px; }
-        .Header-menu-user a:hover {
-          background-color: red; }
     .Header-menu-property {
       justify-content: center;
       margin-top: 5px; }

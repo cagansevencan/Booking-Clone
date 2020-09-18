@@ -78,8 +78,7 @@ a {
     color: rgba($color-navy, .7);
   }
   &::-webkit-calendar-picker-indicator {
-    visibility: hidden;
-
+    visibility: inherit;
   }
 
 }
