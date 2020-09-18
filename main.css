@@ -361,7 +361,8 @@ h1, h2, h3 {
   padding-right: 20px; }
 
 a {
-  color: #083B87; }
+  color: #083B87;
+  transition: .15s; }
 
 .icon {
   display: inline-block;
@@ -623,14 +624,25 @@ a {
       .Showcase-subtitle {
         font-size: 1.2em; } }
   .Showcase-shortlink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px; }
+    margin-top: 40px; }
+    @media (min-width: 768px) {
+      .Showcase-shortlink {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
     .Showcase-shortlink a {
-      color: inherit;
-      margin-left: 10px;
-      margin-right: 10px; }
+      display: block;
+      color: inherit; }
+      @media (min-width: 768px) {
+        .Showcase-shortlink a {
+          margin-left: 10px;
+          margin-right: 10px; } }
+      .Showcase-shortlink a + a {
+        margin-top: 10px; }
+        @media (min-width: 768px) {
+          .Showcase-shortlink a + a {
+            margin-top: 0; } }
       .Showcase-shortlink a:hover {
         text-decoration: underline; }
   .Showcase-store {
@@ -642,15 +654,23 @@ a {
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 50px;
+      height: 45px;
       padding-left: 20px;
       padding-right: 20px;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.15);
       margin-left: 10px;
       margin-right: 10px;
       border-radius: 3px; }
+      @media (min-width: 768px) {
+        .Showcase-store-link {
+          height: 50px; } }
+      .Showcase-store-link:hover {
+        background-color: rgba(0, 0, 0, 0.3); }
       .Showcase-store-link img {
-        width: 110px; }
+        width: 90px; }
+        @media (min-width: 768px) {
+          .Showcase-store-link img {
+            width: 110px; } }
 
 .Search {
   text-align: left;
@@ -660,7 +680,7 @@ a {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); }
   @media (min-width: 768px) {
     .Search {
-      padding: 50px 30px;
+      padding: 40px;
       margin-top: 50px;
       margin-left: 50px;
       margin-right: 50px; } }
