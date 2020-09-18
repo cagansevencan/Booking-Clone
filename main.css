@@ -633,6 +633,24 @@ a {
       margin-right: 10px; }
       .Showcase-shortlink a:hover {
         text-decoration: underline; }
+  .Showcase-store {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .Showcase-store-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 3px; }
+      .Showcase-store-link img {
+        width: 110px; }
 
 .Search {
   text-align: left;
